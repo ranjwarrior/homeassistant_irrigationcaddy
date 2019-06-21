@@ -5,13 +5,13 @@ switch:
     arest_pin_four:
       command_on: "curl -X POST -d 'run=run' http://<IRRIGATIONCADDY_IP>/runSprinklers.htm"
       command_off: "curl -X POST -d 'stop=off' http://<IRRIGATIONCADDY_IP>/stopSprinklers.htm"
-      command_state: "curl -X POST http://192.168.0.8/status.json"
+      command_state: "curl -X POST http://<IRRIGATIONCADDY_IP>/status.json"
       value_template: "{{ value_json['allowRun'] == true }}"
       friendly_name: IrrigationCaddy System
     arest_pin_four1:
       command_on: "curl -X POST -d 'pgmNum=1&doProgram=1&runNow=true' http://<IRRIGATIONCADDY_IP>/runProgram.htm"
       command_off: "curl -X POST -d 'stop=active' http://<IRRIGATIONCADDY_IP>/stopSprinklers.htm"
-      command_state: "curl -X POST http://192.168.0.8/status.json"
+      command_state: "curl -X POST http://<IRRIGATIONCADDY_IP>/status.json"
       value_template: "{{ value_json['running'] == true }}"
       friendly_name: IrrigationCaddy Program 1
 
