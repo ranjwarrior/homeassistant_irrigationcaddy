@@ -11,16 +11,18 @@ Some notes on irrgationcaddy (as of now the company making this product is shut 
 5. curl -X POST -d 'pgmNum=1&doProgram=1&runNow=true' http://ip_of_irrigationcaddy/runProgram.htm starts a Program (same as Run Now on the Program interface of IrrigationCaddy)  
 6. curl -X POST -d 'stop=active' http://ip_of_irrigationcaddy/stopSprinklers.htm stops an active zone. As of now if a program has 5 zones, this will have to be called 5 times to completely turn off the system. Appreciate it if you let me know of a better solution!
 
-Thanks to the following github projetcs/contributors for research and work done on this. The samples in the 3 projects below have excellent code snippets for C# and lua
+Thanks to the following github projetcs/contributors for research and work done on this. The samples in theese projects below have excellent code snippets:
 
-tjotala/IrrigationCaddy
-Simple library for interacting with IrrigationCaddy sprinkler controllers
+mrbalky/irrigationcaddy - Simple scripts for IrrigationCaddy
 
-skonves/Konves.IrrigationCaddy
-c# client library for KGControls' Irrigation Caddy
+khawkes/indigo-irrigationcaddy - Forked from whizzosoftware/indigo-irrigationcaddy-plugin on bitbucket.
 
-a-lurker/Vera-Plugin-Irrigation-Caddy
-Turn the Irrigation Caddy watering programs on and off via Vera
+tjotala/IrrigationCaddy - Simple library for interacting with IrrigationCaddy sprinkler controllers
+
+whizzosoftware/indigo-irrigationcaddy-plugin
+
+skonves/Konves.IrrigationCaddy - c# client library for KGControls' Irrigation Caddy
+
 
 
 
