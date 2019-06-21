@@ -10,7 +10,7 @@ Some notes on irrgationcaddy (as of now the company making this product is shut 
 4. curl -X POST -d 'stop=off' http://<ip of irrigationcaddy>/stopSprinklers.htm turns the Sprinkler System to OFF
 5. curl -X POST -d 'pgmNum=1&doProgram=1&runNow=true' http://<ip of irrigationcaddy>/runProgram.htm starts a Program (same as Run Now on the Program interface of IrrigationCaddy)
   
-6. curl -X POST -d 'stop=active' http://192.168.0.8/stopSprinklers.htm stops an active zone. As of now if a program has 5 zones, this will have to be called 5 times to completely turn off the system. Appreciate it if you let me know of a better solution!
+6. curl -X POST -d 'stop=active' http://<ip of irrigationcaddy>/stopSprinklers.htm stops an active zone. As of now if a program has 5 zones, this will have to be called 5 times to completely turn off the system. Appreciate it if you let me know of a better solution!
 
 Thanks to the following github projetcs/contributors for research and work done on this. The samples in the 3 projects below have excellent code snippets for C# and lua
 
