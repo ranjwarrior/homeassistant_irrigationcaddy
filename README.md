@@ -1,6 +1,6 @@
 # homeassistant_irrigationcaddy
 Config files for controlling irrgationcaddy sprinkler system from homeassistant.
-Thanks for the homeassistant forums where most of this information can also be found.
+Thanks to the homeassistant forums where most of this information can also be found (https://community.home-assistant.io/t/garden-irrigation/1950).
 
 Some notes on irrgationcaddy (as of now the company making this product is shut down, so no API docs are available):
 
